@@ -1,0 +1,10 @@
+[Unit]
+Description=Script to retrieve the date and connection speed
+
+[Timer]
+OnStartupSec=2min
+OnUnitActiveSec=2min
+AccuracySec=5sec
+
+[Install]
+WantedBy=multi-user.target

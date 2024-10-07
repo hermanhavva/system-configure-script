@@ -1,0 +1,7 @@
+
+[Unit]
+Description=Script to retrieve the date and connection speed
+
+[Service]
+ExecStart=/etc/simpleService.sh
+
