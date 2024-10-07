@@ -3,7 +3,10 @@
 By running `configure_system.sh` you are dowloading following packages:
 - `fast` (for testing network speed)
 - `netperf` 
-- `nload` 
+- `nload`
+
+And creating a new dir and config file: `/usr/share/rocketman/opt/config.rs`
+
 #### After the script finishes running you have a systemd routin running every 2 min in the background. 
 It outputs the result in the format `Month-Day Hour:Min | <speed> Mbps`.
 
@@ -13,7 +16,7 @@ journalctl -S today -f -u simpleService.service
 ````
 ## How to set it all up? 
 Place files `simpleService.service`, `simpleService.sh`, `simpleService.timer`, `configure_system.sh` into the same 
-directory. Run `configure_system.sh`. 
+directory. Run `configure_system.sh`: 
 ````
 sudo sh configure_system.sh
 ````
